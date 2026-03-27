@@ -7,8 +7,8 @@ function App() {
   const [lang1, setLang1] = useState('');
   const [lang2, setLang2] = useState('');
   const [input, setInput] = useState('');
-  const [output, setOutput] = useState('');
-  const [state, setState] = useState('');
+  const [output, setOutput] = useState(''); // eslint-disable-line no-unused-vars
+  const [state, setState] = useState(''); // eslint-disable-line no-unused-vars
   const [filename, setFilename] = useState('');
 
   const handleFile = (e) => {
