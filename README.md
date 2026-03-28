@@ -71,3 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # subtitle-translator
 ![image](https://user-images.githubusercontent.com/79476502/203831810-64542e34-1e54-4eaf-bd0d-9d3d4474a68a.png)
 
+new ui
+
+<img width="1592" height="909" alt="image" src="https://github.com/user-attachments/assets/49d83f0e-9682-4184-89db-56756ad8444e" />
+
+
