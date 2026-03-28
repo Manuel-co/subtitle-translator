@@ -394,33 +394,125 @@ body {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 680px) {
+  /* Header */
+  .container-header {
+    padding: 14px 20px;
+  }
+
+  .container-header h2 {
+    font-size: 1rem;
+  }
+
+  .header-badge {
+    display: none;
+  }
+
+  /* Main grid — single column */
   .container-content {
     grid-template-columns: 1fr;
-    margin: 32px auto;
+    margin: 24px auto;
+    padding: 0 16px;
+    gap: 0;
   }
 
+  /* All sections span full width */
   .container-body,
+  .container-select,
   .container-actions {
     grid-column: 1 / 2;
   }
 
+  /* Upload card padding */
+  .card {
+    padding: 24px 20px;
+    border-radius: 4px;
+  }
+
+  .card h2 {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+  }
+
+  .file-upload-area {
+    padding: 24px 16px;
+  }
+
+  /* Language selectors stack vertically */
   .container-select {
-    grid-column: 1 / 2;
     grid-template-columns: 1fr;
   }
 
-  .lang-block:first-child { border-right-width: 2px; }
-  .lang-block:last-child  { border-left-width: 2px; }
+  .lang-block {
+    padding: 24px 20px;
+  }
 
+  .lang-block:first-child {
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+  }
+
+  .lang-block:last-child {
+    border-left-width: 2px;
+    border-top-width: 1px;
+  }
+
+  .lang-block h3 {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+  }
+
+  .styled-select {
+    padding: 12px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* Actions — info stacks above buttons */
   .container-actions {
     grid-template-columns: 1fr;
   }
 
-  .action-info { border-right-width: 2px; border-bottom-width: 1px; }
-  .action-buttons { border-left-width: 2px; border-top-width: 1px; flex-direction: row; }
-  .btn-translate { border-bottom: none; border-right: 1px solid #333; }
-  .btn-download  { border-top: none; }
+  .action-info {
+    border-right-width: 2px;
+    border-bottom: 1px solid var(--border);
+    border-top-width: 2px;
+    padding: 20px;
+  }
 
-  .container-header { padding: 16px 24px; }
-  .header-badge { display: none; }
+  .action-info p {
+    font-size: 0.75rem;
+    max-width: 100%;
+  }
+
+  /* Buttons side by side */
+  .action-buttons {
+    border-left-width: 2px;
+    border-top-width: 1px;
+    flex-direction: row;
+    min-height: 64px;
+  }
+
+  .btn-translate {
+    padding: 0 20px;
+    font-size: 0.8rem;
+    border-bottom: none;
+    border-right: 1px solid #333;
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .btn-download {
+    padding: 0 20px;
+    font-size: 0.8rem;
+    border-top: none;
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  /* Footer */
+  .app-footer {
+    padding: 14px 20px;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
 }
